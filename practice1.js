@@ -8,7 +8,13 @@ function appUpTo(n) {
     return total;
 }
 
-// same output
+
+//time
+let t1 = performance.now();
+addUpToNew(1000000000);
+let t2 = performance.now();
+
+// same output but without loop
 // different way
 function addUpToNew(n) {
     return n * (n + 1) / 2;
